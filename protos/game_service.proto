@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+service Game {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  int32 client_version = 1;
+}
+
+// The response message containing the greetings
+message HelloReply {
+  bool valid_client_version = 1;
+  int32 server_version = 2;
+}
