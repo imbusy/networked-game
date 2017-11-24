@@ -1,0 +1,3 @@
+server/interface/.*
+.git
+_pycache_
