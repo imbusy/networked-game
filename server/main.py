@@ -17,7 +17,7 @@ def serve():
 	gs_grpc.add_GameServicer_to_server(game_service.GameService(), server)
 	server.add_insecure_port('[::]:{port}'.format(port=settings.server_port))
 
-	logging.info('Starting service at port {port}.'.format(port=settings.server_port))
+	logging.info('Starting server at port {port}.'.format(port=settings.server_port))
 	server.start()
 	try:
 		while True:
