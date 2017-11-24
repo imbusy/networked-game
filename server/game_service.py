@@ -1,5 +1,5 @@
-import server.interface.game_server_pb2_grpc as gs_grpc
-import server.interface.game_server_pb2 as gs
+import server.interface.game_service_pb2_grpc as gs_grpc
+import server.interface.game_service_pb2 as gs
 import server.settings as settings
 
 class GameService(gs_grpc.GameServicer):
