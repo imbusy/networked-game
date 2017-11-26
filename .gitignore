@@ -1,3 +1,4 @@
-server/interface/game_service_.*
+server/interface/game_service_*
 .git
 __pycache__
+.idea/workspace.xml

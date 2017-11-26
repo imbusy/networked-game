@@ -1,1 +1,1 @@
-python -m pip install grpcio grpcio-tools pyglet
+python -m pip install grpcio grpcio-tools arcade
