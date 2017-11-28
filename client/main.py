@@ -1,3 +1,4 @@
+import arcade
 import grpc
 import logging
 import os
@@ -5,7 +6,8 @@ import sys
 
 sys.path.append(os.getcwd())
 
-import client.game
+from client.game import GameWindow
+from client.network import NetworkThread
 import client.settings as settings
 import server.interface.game_service_pb2_grpc as gs_grpc
 import server.interface.game_service_pb2 as gs
@@ -19,4 +21,11 @@ if __name__ == '__main__':
         logging.error('Client too old. Please update your client.')
         sys.exit()
 
-    client.game.run(server)
+    logging.info('Running game.')
+    window = GameWindow()
+    window.setup()
+    #network_thread = NetworkThread(window, server)
+    #network_thread.start()
+    arcade.run()
+    #network_thread.finish()
+    #network_thread.join(timeout=5)

@@ -1,10 +1,10 @@
-Game that is being developed during a live Twitch stream.
+An experiment in gRPC.
 
-Setup
-=====
+Setup for Windows
+=================
 
 1. Download Python at https://www.python.org/ and install if you have not already done that.
-2. Run setup-windows.bat
+2. Run _setup-windows.bat_
 
 Running the game
 ================
